@@ -30,4 +30,20 @@ Here app is the name of the service which came from docker-compose file
 Executed the below command and the django app started
 ```docker-compose up```
 
-## First Commit 
+## Completed First Commit 
+
+## Travis CI integration and flake 8 integration
+
+### Step 1
+Created a travis.yml file in the project directory 
+
+### Step 2 
+Activated the travis CI account and integrated it with the repo 
+
+### Step 3
+
+Implemented flake8. Some problem hence removed it. Will execute it later
+
+### Step 4
+Added code and commited and pushed. The pipeline is automitacilly triggred on travis. You can directly check on the travis account.
+https://app.travis-ci.com/github/nikhilgarware/recipe-django-rest 

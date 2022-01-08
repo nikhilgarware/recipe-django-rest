@@ -1,13 +1,18 @@
 # what language the project uses
 
 language: python
+
+#which version is used
 python:
   - "3.6"
 
+# what services we are going to require. We only require docker other all services are inside docker
 services:
   - docker 
 
+# before script is executed before the app testing starts. Here we are install docker-compose as we require it 
 before_script: pip install docker-compose
 
+# here we execute the command which are required at the time of testing in travis CI
 script: 
   - docker-compose run app sh -c "python manage.py test"
